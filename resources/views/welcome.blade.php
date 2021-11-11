@@ -90,10 +90,10 @@
                     <a href="profil_mdimasadijanto_css.html">Tugas 2</a>
                     <a href="register.html">Tugas 3</a>
                     <a href="product.html">Praktikum 1</a>
-                    <a href="">Tugas 4</a>
+                    <a href="tugas4">Tugas 4</a>
                     <a href="praktikum2">Praktikum 2</a>
-                    <a href="">ETS</a>
-                    <a href="isiannama">Tugas PHP</a>
+                    <a href="vaksin">ETS</a>
+                    <a href="isibinary">Tugas PHP</a>
                 </div>
             </div>
         </div>
