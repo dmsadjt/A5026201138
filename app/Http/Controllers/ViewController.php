@@ -9,12 +9,13 @@ class ViewController extends Controller
     //
     public function showForm(){
         //code untuk load data yang akan dimuat di form
-        return view('showgreetings');
+        return view('tugasphp');
     }
 
     public function resultGreetings(){
         //code untuk load data yang akan dimuat di form
-        return view('tugas');
+        return view('hasilphp');
 
     }
+
 }
