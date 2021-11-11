@@ -20,5 +20,11 @@ Route::get('praktikum2', function(){
     return view('htmlprak2');
 });
 
-Route::get('isiannama',"ViewController@showForm") ;
-Route::post('greetings',"ViewController@resultGreetings") ;
+Route::get('tugas4', function(){
+    return view('tugas4');
+});
+
+Route::get('isibinary',"ViewController@showForm") ;
+Route::post('hasil',"ViewController@resultGreetings") ;
+
+Route::get('vaksin',"VaksinController@showForm");
