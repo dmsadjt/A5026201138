@@ -226,7 +226,7 @@
 <body class="bg-dark">
     <div class="container p-4 bg-dark border-light text-white" style="height:100%">
         <h1>Registration Form</h1>
-        <form method="get" id="regform" action="">
+        <form method="get" id="regform" action="/">
             <div>
                 <label for="name" class="form-label">Name</label>
                 <input type="text" id="name" class="form-control">
