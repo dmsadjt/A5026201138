@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <Title>Register</Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body
+    style="height:auto;background-image:url(https://wallup.net/wp-content/uploads/2017/05/29/267758-anime-landscape-nature-fantasy_art-minimalism-vector.jpg);background-size:cover;">
+    <div class="text-white container-fluid">
+        <div class="card-body"></div>
+        <!-- <div class="card-body"></div> -->
+        <!-- <div class="card-body"></div> -->
+        <!-- <div class="card-body"></div> -->
+        <div class="container-sm p-3">
+            <div class="p-5 mb-3 bg-dark rounded shadow">
+                <h1 class="text-center font-weight-bold">Register as a Dragon Slayer!</h1>
+                <p class="text-center">The guild is searching for new slayers with high motivation.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="email" class="font-weight-bold">EMAIL</label>
+                        <input type="text" class="form-control" placeholder="example@mail.com" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="usr" class="font-weight-bold">USERNAME</label>
+                        <input type="text" class="form-control" placeholder="user123" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass" class="font-weight-bold">PASSWORD</label>
+                        <input type="password" class="form-control" id="pass">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpass" class="font-weight-bold">CONFIRM PASSWORD</label>
+                        <input type="password" class="form-control" id="cpass">
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="bgner" name="exp" value="Beginner">
+                        <label class="custom-control-label" for="bgner">I am a beginner</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="expe" name="exp" value="Experienced">
+                        <label class="custom-control-label" for="expe">I am an experienced dragon slayer</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="mot" class="font-weight-bold">Please tell us your brief motivation in dragon
+                            slaying</label>
+                        <textarea class="form-control" rows="3" id="mot"
+                            placeholder="Its like im actually living my life!"></textarea>
+                    </div>
+
+                    <select name="yers" class="custom-select">
+                        <option selected>How many years have you been slayin'?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                    </select><br><br>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="agr" name="agree">
+                        <label class="custom-control-label" for="agr">I confirm that I have read,
+                            understand
+                            and agree to the above policy and procedure for
+                            creating a new account.</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="ema" name="news">
+                        <label class="custom-control-label" for="ema">Send me emails about updates on
+                            the
+                            existence of Dragons.</label>
+                    </div><br>
+                    <div>
+                        <input type="submit" class="btn btn-info" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+            <div class="card-body"></div>
+            <div class="card-body"></div>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
