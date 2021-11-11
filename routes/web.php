@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('praktikum2', function(){
+
+    return view('htmlprak2');
+});
+
+Route::get('isiannama',"ViewController@showForm") ;
+Route::post('greetings',"ViewController@resultGreetings") ;
