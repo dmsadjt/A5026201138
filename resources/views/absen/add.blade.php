@@ -17,7 +17,7 @@
             <div class="form-group">
                 <label for="dtpickerdemo" class="control-label">Tanggal :</label>
                 <div class='col-sm-4 input-group date ' id='dtpickerdemo'>
-                    <input type='text' class="form-control" name="tanggal" required="required" />
+                    <input type='text' class="form-control" name="Tanggal" required="required" />
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>

@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas Query Builder 25 November 2021</title>
-</head>
-<body>
-
-	<h2>Tugas Query Builder 25 November 2021</h2>
-	<h3>Muhammad Dimas Adijanto 5026201138</h3>
-
+@extends('layout.bahagia')
+@section('title','Data Tugas Pegawai')
+@section('konten')
+    @section('judulhalaman','Data Tugas Pegawai')
 	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
-
 	<br/>
 	<br/>
-
 	<table border="1">
 		<tr>
 			<th>ID</th>
@@ -36,7 +28,4 @@
 		</tr>
 		@endforeach
 	</table>
-
-
-</body>
-</html>
+@endsection

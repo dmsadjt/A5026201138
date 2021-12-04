@@ -18,7 +18,7 @@
         <div class="form-group">
             <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
             <div class='col-sm-4 input-group date ' id='dtpickerdemo'>
-                <input type='text' class="form-control" name="tanggal" value="{{ $a->Tanggal }}"
+                <input type='text' class="form-control" name="Tanggal" value="{{ $a->Tanggal }}"
                     required="required" />
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>

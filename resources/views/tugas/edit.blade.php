@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas Query Builder 25 November 2021</title>
-</head>
-<body>
-
-	<h2>Tugas Query Builder 25 November 2021</h2>
-	<h3>Muhammad Dimas Adijanto 5026201138</h3>
+@extends('layout.bahagia')
+@section('title','Edit Data Tugas')
+@section('konten')
+    @section('judulhalaman','Edit Data Tugas Pegawai')
 
 	<a href="/tugas"> Kembali</a>
 
@@ -17,14 +12,38 @@
 	<form action="/tugas/update" method="post">
 		{{ csrf_field() }}
 		<input type="hidden" name="ID" value="{{ $t->ID }}"> <br/>
-		ID Pegawai <input type="text" required="required" name="IDPegawai" value="{{ $t->IDPegawai }}"> <br/>
-		Tanggal <input type="datetime-local" required="required" name="Tanggal" value="{{ date('Y-m-d\TH:i', strtotime($t->Tanggal))}}"> <br/>
+
+        ID Pegawai <select name="IDPegawai" id="">
+           @foreach ($pegawai as $p)
+               <option value="{{$p->pegawai_id}}" @if($t->IDPegawai === $p->pegawai_id) selected="selected" @endif >{{$p->pegawai_nama}}</option>
+           @endforeach
+        </select>
+
+        <div class="form-group">
+            <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
+            <div class='col-sm-4 input-group date ' id='dtpickerdemo'>
+                <input type='text' class="form-control" name="Tanggal" value="{{ $t->Tanggal }}"
+                    required="required" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $('#dtpickerdemo').datetimepicker({
+                    format: 'YYYY-MM-DD hh:mm:ss',
+                    showTodayButton: false,
+                    locale: 'id',
+                    "defaultDate": new Date(),
+                });
+            });
+        </script>
+
 		Nama Tugas <input type="string" required="required" name="NamaTugas" value="{{ $t->NamaTugas }}"> <br/>
 		Status <input type="string" required="required" name="Status" value="{{ $t->Status }}"><br/>
 		<input type="submit" value="Simpan Data">
 	</form>
 	@endforeach
 
-
-</body>
-</html>
+@endsection

@@ -14,7 +14,10 @@ class TugasController extends Controller
     }
     public function tambah()
     {
-        return view('tugas.tambah');
+        $pegawai = DB::table('pegawai')
+                        ->orderBy('pegawai_nama','asc')
+                        ->get();
+        return view('tugas.tambah',['pegawai'=>$pegawai]);
     }
     public function store(Request $request)
     {
@@ -29,13 +32,16 @@ class TugasController extends Controller
 
     public function edit($id)
     {
-
+        $pegawai = DB::table('pegawai')
+                        ->orderBy('pegawai_nama','asc')
+                        ->get();
         $tugas = DB::table('tugas')->where('ID', $id)->get();
-        return view('tugas.edit', ['tugas' => $tugas]);
+        return view('tugas.edit', ['tugas' => $tugas,'pegawai'=>$pegawai]);
     }
 
     public function update(Request $request)
     {
+
         DB::table('tugas')->where('ID', $request->ID)->update([
             'IDPegawai' => $request->IDPegawai,
             'Tanggal' => $request->Tanggal,
