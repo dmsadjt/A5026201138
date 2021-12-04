@@ -44,3 +44,12 @@ Route::post('/tugas/store','TugasController@store');
 Route::get('/tugas/edit/{id}','TugasController@edit');
 Route::post('/tugas/update','TugasController@update');
 Route::get('/tugas/hapus/{id}','TugasController@hapus');
+
+//absen
+//route CRUD absen
+Route::get('/absen','AbsenController@indexabsen');
+Route::get('/absen/add','AbsenController@add');
+Route::post('/absen/store','AbsenController@store');
+Route::get('/absen/edit/{id}','AbsenController@edit');
+Route::post('/absen/update','AbsenController@update');
+Route::get('/absen/hapus/{id}','AbsenController@hapus');
