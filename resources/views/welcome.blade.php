@@ -94,8 +94,7 @@
                     <a href="praktikum2">Praktikum 2</a>
                     <a href="vaksin">ETS</a>
                     <a href="isibinary">Tugas PHP</a>
-                    <a href="pegawai">Data Pegawai</a>
-                    <a href="tugas">Data Tugas</a>
+                    <a href="pegawai">CRUD Laravel</a>
                 </div>
             </div>
         </div>
