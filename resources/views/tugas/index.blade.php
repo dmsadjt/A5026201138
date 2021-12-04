@@ -5,13 +5,14 @@
 	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
 	<br/>
 	<br/>
-	<table border="1">
+	<table border="1" class="table table-bordered table-hover">
 		<tr>
 			<th>ID</th>
 			<th>ID Pegawai</th>
 			<th>Tanggal</th>
 			<th>Nama Tugas</th>
 			<th>Status</th>
+            <th>Opsi</th>
 		</tr>
 		@foreach($tugas as $t)
 		<tr>

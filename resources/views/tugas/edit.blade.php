@@ -3,24 +3,20 @@
 @section('konten')
     @section('judulhalaman','Edit Data Tugas Pegawai')
 
-	<a href="/tugas"> Kembali</a>
-
-	<br/>
-	<br/>
-
 	@foreach($tugas as $t)
 	<form action="/tugas/update" method="post">
 		{{ csrf_field() }}
-		<input type="hidden" name="ID" value="{{ $t->ID }}"> <br/>
-
-        ID Pegawai <select name="IDPegawai" id="">
-           @foreach ($pegawai as $p)
-               <option value="{{$p->pegawai_id}}" @if($t->IDPegawai === $p->pegawai_id) selected="selected" @endif >{{$p->pegawai_nama}}</option>
-           @endforeach
-        </select>
-
+        <input type="hidden" name="ID" value="{{ $t->ID }}"> <br/>
         <div class="form-group">
-            <label for="dtpickerdemo" class="col-sm-2 control-label">Tanggal :</label>
+            <label for="IDPegawai" >ID Pegawai</label>
+           <select name="IDPegawai" class="form-control" id="IDPegawai">
+                @foreach ($pegawai as $p)
+                    <option value="{{$p->pegawai_id}}" @if($t->IDPegawai === $p->pegawai_id) selected="selected" @endif >{{$p->pegawai_nama}}</option>
+                @endforeach
+             </select>
+        </div>
+        <div class="form-group">
+            <label for="dtpickerdemo" class="control-label">Tanggal :</label>
             <div class='col-sm-4 input-group date ' id='dtpickerdemo'>
                 <input type='text' class="form-control" name="Tanggal" value="{{ $t->Tanggal }}"
                     required="required" />
@@ -39,11 +35,17 @@
                 });
             });
         </script>
-
-		Nama Tugas <input type="string" required="required" name="NamaTugas" value="{{ $t->NamaTugas }}"> <br/>
-		Status <input type="string" required="required" name="Status" value="{{ $t->Status }}"><br/>
-		<input type="submit" value="Simpan Data">
+        <div class="form-group">
+            <label for="NamaTugas">Nama Tugas</label>
+            <input type="string" required="required" class="form-control" id="NamaTugas" name="NamaTugas" value="{{ $t->NamaTugas }}">
+        </div>
+        <div class="form-group">
+            <label for="Status">Status</label>
+            <input type="string" required="required" class="form-control" name="Status" value="{{ $t->Status }}">
+        </div>
+		<input type="submit" class="btn btn-primary" value="Simpan Data">
 	</form>
 	@endforeach
-
+    <br>
+    <a href="/tugas" class="btn btn-default"> Kembali</a>
 @endsection
