@@ -14,8 +14,6 @@
     <script
         src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js">
     </script>
-
-
 </head>
 
 <body>

@@ -1,20 +1,28 @@
 @extends("layout.bahagia")
-@section('title','Tambah Data Pegawai')
+@section('title', 'Tambah Data Pegawai')
 @section('konten')
-    @section('judulhalaman','Tambah Data Pegawai')
+@section('judulhalaman', 'Tambah Data Pegawai')
 
-	<a href="/pegawai"> Kembali</a>
+<form action="/pegawai/store" method="post">
+    {{ csrf_field() }}
+    <div class="form-group">
+        <label for="nama">Nama</label>
+        <input type="text" class="form-control" name="nama" id="nama" required="required"> <br />
+    </div>
+    <div class="form-group">
+        <label for="jabatan">Jabatan</label>
+        <input type="text" class="form-control" name="jabatan" id="jabatan" required="required"> <br />
+    </div>
+    <div class="form-group">
+        <label for="umur">Umur</label>
+        <input type="number" class="form-control" name="umur" id="umur" required="required"> <br />
 
-	<br/>
-	<br/>
-
-	<form action="/pegawai/store" method="post">
-		{{ csrf_field() }}
-		Nama <input type="text" name="nama" required="required"> <br/>
-		Jabatan <input type="text" name="jabatan" required="required"> <br/>
-		Umur <input type="number" name="umur" required="required"> <br/>
-		Alamat <textarea name="alamat" required="required"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
-	</form>
-
+    </div>
+    <div class="form-group">
+        <label for="alamat">Alamat</label>
+        <textarea name="alamat" class="form-control" id="alamat" required="required"></textarea> <br />
+    </div>
+    <input type="submit" class="btn btn-primary" value="Simpan Data">
+</form><br>
+<a href="/pegawai" class="btn btn-default"> Kembali</a>
 @endsection

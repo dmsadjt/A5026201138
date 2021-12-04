@@ -8,7 +8,7 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table border="1" class="table table-bordered table-hover">
 		<tr>
 			<th>Nama</th>
 			<th>Jabatan</th>

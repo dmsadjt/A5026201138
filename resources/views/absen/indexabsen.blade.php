@@ -8,7 +8,7 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table border="1" class="table table-bordered table-hover">
 		<tr>
 
 			<th>IDPegawai</th>
@@ -35,6 +35,6 @@
         I : Izin <br>
         S : Sakit <br>
         A : Alpha <br>
-        </p>
+    </p>
 
 @endsection
