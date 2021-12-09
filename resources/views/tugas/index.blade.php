@@ -7,8 +7,7 @@
 	<br/>
 	<table border="1" class="table table-bordered table-hover">
 		<tr>
-			<th>ID</th>
-			<th>ID Pegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
 			<th>Nama Tugas</th>
 			<th>Status</th>
@@ -16,8 +15,7 @@
 		</tr>
 		@foreach($tugas as $t)
 		<tr>
-			<td>{{ $t->ID }}</td>
-			<td>{{ $t->IDPegawai }}</td>
+			<td>{{ $t->pegawai_nama }}</td>
 			<td>{{ $t->Tanggal }}</td>
 			<td>{{ $t->NamaTugas }}</td>
 			<td>{{ $t->Status }}</td>

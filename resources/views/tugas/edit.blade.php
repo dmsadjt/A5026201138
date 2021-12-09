@@ -48,4 +48,7 @@
 	@endforeach
     <br>
     <a href="/tugas" class="btn btn-default"> Kembali</a>
+    <div class="col">
+        <div></div>
+    </div>
 @endsection

@@ -11,7 +11,7 @@
 	<table border="1" class="table table-bordered table-hover">
 		<tr>
 
-			<th>IDPegawai</th>
+			<th>Pegawai</th>
 			<th>Tanggal</th>
 			<th>Status</th>
 			<th>Opsi</th>
@@ -19,7 +19,7 @@
 		@foreach($absen as $a)
 		<tr>
 
-			<td>{{ $a->IDPegawai }}</td>
+			<td>{{ $a->pegawai_nama }}</td>
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>

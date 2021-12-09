@@ -43,7 +43,8 @@
                 <ul class="nav text-center">
                     <li><a href="/pegawai" class="btn btn-default p-1">Pegawai</a></li><hr>
                     <li><a href="/absen" class="btn btn-default p-1">Absen</a></li><hr>
-                    <li><a href="/tugas" class="btn btn-default p-1">Tugas</a></li><br>
+                    <li><a href="/tugas" class="btn btn-default p-1">Tugas</a></li><hr>
+                    <li><a href="/pensil" class="btn btn-default p-1">Pensil</a></li><hr>
                 </ul>
                 </div>
             </div>
@@ -65,5 +66,6 @@
         <p>Hak Cipta Oleh <b>5026201138 - Muhammad Dimas Adijanto</b></p>
     </div>
 </footer>
+
 
 </html>

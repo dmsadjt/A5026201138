@@ -29,13 +29,15 @@ Route::post('hasil',"ViewController@resultGreetings") ;
 
 Route::get('vaksin',"VaksinController@showForm");
 
-//route CRUD
+//pegawai
 Route::get('/pegawai','PegawaiController@index');
 Route::get('/pegawai/tambah','PegawaiController@tambah');
 Route::post('/pegawai/store','PegawaiController@store');
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+Route::get('/pegawai/cari','PegawaiController@cari');
+Route::get('/pegawai/view/{id}','PegawaiController@view');
 
 //tugas
 Route::get('/tugas','TugasController@index');
@@ -46,10 +48,19 @@ Route::post('/tugas/update','TugasController@update');
 Route::get('/tugas/hapus/{id}','TugasController@hapus');
 
 //absen
-//route CRUD absen
 Route::get('/absen','AbsenController@indexabsen');
 Route::get('/absen/add','AbsenController@add');
 Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//pensil
+Route::get('/pensil','PensilController@index');
+Route::get('/pensil/tambah','PensilController@tambah');
+Route::post('/pensil/store','PensilController@store');
+Route::get('/pensil/edit/{id}','PensilController@edit');
+Route::post('/pensil/update','PensilController@update');
+Route::get('/pensil/hapus/{id}','PensilController@hapus');
+Route::get('/pensil/cari','PensilController@cari');
+Route::get('/pensil/view/{id}','PensilController@view');
