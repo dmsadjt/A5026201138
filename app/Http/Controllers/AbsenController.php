@@ -17,7 +17,7 @@ class AbsenController extends Controller
         $absen = DB::table('absen')
                     ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
                     ->select('absen.*', 'pegawai.pegawai_nama')
-                    ->paginate();
+                    ->paginate(5);
 
 
     	// mengirim data absen ke view indexabsen

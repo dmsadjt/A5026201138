@@ -30,6 +30,8 @@
 		</tr>
 		@endforeach
 	</table>
+
+    {{$absen->links()}}
     <p>
         Keterangan Status: <br>
         I : Izin <br>
