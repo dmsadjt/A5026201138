@@ -37,12 +37,12 @@ class Karyawan1Controller extends Controller
         return redirect('/karyawan');
     }
 
-    // method untuk hapus data pegawai
+    // method untuk hapus data karyawan
     public function hapus($nip)
     {
-        // menghapus data pegawai berdasarkan id yang dipilih
+        // menghapus data karyawan berdasarkan nip yang dipilih
         DB::table('karyawan1')->where('NIP', $nip)->delete();
-        // alihkan halaman ke halaman pegawai
+        // alihkan halaman ke halaman karyawan
         return redirect('/karyawan');
     }
 }
