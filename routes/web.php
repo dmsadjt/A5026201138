@@ -64,3 +64,10 @@ Route::post('/pensil/update','PensilController@update');
 Route::get('/pensil/hapus/{id}','PensilController@hapus');
 Route::get('/pensil/cari','PensilController@cari');
 Route::get('/pensil/view/{id}','PensilController@view');
+
+
+//route karyawan
+Route::get('/karyawan','Karyawan1Controller@index');
+Route::get('/karyawan/tambah','Karyawan1Controller@tambah');
+Route::post('/karyawan/store','Karyawan1Controller@store');
+Route::get('/karyawan/hapus/{id}','Karyawan1Controller@hapus');

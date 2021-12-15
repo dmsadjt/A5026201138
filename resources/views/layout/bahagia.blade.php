@@ -45,6 +45,7 @@
                     <li><a href="/absen" class="btn btn-default p-1">Absen</a></li><hr>
                     <li><a href="/tugas" class="btn btn-default p-1">Tugas</a></li><hr>
                     <li><a href="/pensil" class="btn btn-default p-1">Pensil</a></li><hr>
+                    <li><a href="/karyawan" class="btn btn-default">Karyawan</a></li>
                 </ul>
                 </div>
             </div>
